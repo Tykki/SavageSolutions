@@ -1,0 +1,30 @@
+<script type="text/ng-template" id="signIn">
+        <div class="modal-header">
+            <h3 class="modal-title">Sign In</h3>
+        </div>
+
+        <div class="modal-body">
+			<form name="signIn" novalidate>
+			  <div class="form-group">
+				<label for="Username">Username</label>
+				<input type="text" class="form-control" ng-model="name" name="Name" placeholder="Username..." required>
+				<div ng-hide="cover" role="alert">
+					<span class="error" ng-show="signIn.Name.$error.required">Please use vaild Username Please.</span>
+				</div>
+			  </div>
+			  <div class="form-group">
+				<label for="Password">Password</label>
+				<input type="password" class="form-control" ng-model="password" name="Password" placeholder="Password..." required>
+				<div ng-hide="cover" role="alert">
+					<span class="error" ng-show="signIn.Password.$error.required">Please double check your password...</span>
+				</div>
+			  </div>
+
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" type="submit" ng-click="login(signIn)">Sign In</button>
+            <button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button>
+        </div>
+    </script>
+	

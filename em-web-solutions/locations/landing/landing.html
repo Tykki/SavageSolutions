@@ -1,0 +1,63 @@
+<div ng-controller="LanCtrl">
+	<section>
+		<uib-carousel interval="myInterval" no-wrap="noWrapSlides">
+      <uib-slide ng-repeat="slide in slides" active="slide.active">
+        <img ng-src="{{slide.image}}" style="margin:auto;">
+        <div class="carousel-caption">
+          <h4>Slide {{$index}}</h4>
+          <p>{{slide.text}}</p>
+        </div>
+      </uib-slide>
+    </uib-carousel>
+	</section>
+	
+	<section class="page-header title-wrap">
+		<h1>{{title}} <small>{{small}}</small></h1>
+	</section>
+
+<div class="container">
+	<div class="panel-shadow panel panel-default">
+		<div class="panel-body">	
+				<div class="row" >
+					<div class="center">
+					<section class="col-md-4">
+						<img class="img-circle" src="http://lorempixel.com/150/150/abstract" width="150" height="150" />
+						<h2>Stay</h2>
+						<p>blah blah blah</p>
+						<button type="button" class="btn btn-default">Click it!</button> 
+					</section>
+					
+					<section class="col-md-4">
+						<img class="img-circle" src="http://lorempixel.com/150/150/abstract" width="150" height="150" />
+						<h2>Savage</h2>
+						<p>blah blah blah</p>
+						<button type="button" class="btn btn-default">Click it!</button> 
+					</section>
+					
+					<section class="col-md-4">
+						<img class="img-circle" src="http://lorempixel.com/150/150/abstract" width="150" height="150" />
+						<h2>Homie</h2>
+						<p>blah blah blah</p>
+						<button type="button" class="btn btn-default">Click it!</button> 
+					</section>
+				</div>
+			</div>
+			<hr/>
+			<div>
+				<h1>Under Savage Construction!</h1>
+				<h2>Husstler for death, no heaven for a gangsta'</h2>
+			</div>
+			<br>
+			<hr>
+			<br>
+			<div>
+				<section class="pull-left">
+					<h1>2Pac Will Rise again!</h1>
+					<h2>How could you ever doubt the power??!</h2>	
+				</section>
+				<img class="pull-right" src="http://www.xxlmag.com/wp-content/uploads/2012/09/2pac8.jpg"/>
+			</div>
+		</div>
+	</div>
+	</div>
+</div>
